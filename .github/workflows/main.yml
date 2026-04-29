@@ -45,7 +45,7 @@ jobs:
       - name: run job4.py
         run: python job4.py
 
-job5:
+  job5:
     runs-on: ubuntu-latest
     needs: job3
     steps:
@@ -55,7 +55,7 @@ job5:
       - name: run job5.py
         run: python job5.py
 
-job6:
+  job6:
     runs-on: ubuntu-latest
     needs: [job4,job5]
     steps:
